@@ -1,0 +1,21 @@
+﻿<Application x:Class="WpfAppDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfAppDemo"
+             StartupUri="Password.xaml">
+    <Application.Resources>
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ExternalSources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        <Style TargetType="Label" BasedOn="{StaticResource basestyle}">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+        <Style TargetType="Label" x:Key="Label_red_style">
+            <Setter Property="Foreground" Value="red"/>
+        </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
