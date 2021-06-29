@@ -7,8 +7,24 @@
         <Setter Property="Foreground" Value="blue" />
     </Style>
     <Style TargetType="TextBox" BasedOn="{StaticResource basestyle}">
-        <Setter Property="Width" Value="300" />
-        <Setter Property="Height" Value="30" />
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="30"/>
+        <!--<Style.Triggers>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="Yellow" />
+            </Trigger>
+        </Style.Triggers>-->
+        <!--<Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsFocused" Value="True"/>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Background" Value="Yellow"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+        </Style.Triggers>-->
     </Style>
     <!--<Button.Template>-->
         <ControlTemplate TargetType="Button" x:Key="RoundButtonTemplate">
@@ -31,6 +47,15 @@
                 </Ellipse>
                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Button.Content}" />
             </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="Button.IsMouseOver" Value="True">
+                <Setter TargetName="InnerCircle" Property="Fill" Value="LightGreen"/>
+            </Trigger>
+            <Trigger Property="Button.IsPressed" Value="True">
+                <Setter TargetName="InnerCircle" Property="Width" Value="60"/>
+                <Setter TargetName="InnerCircle" Property="Height" Value="60"/>
+                <Setter TargetName="InnerCircle" Property="Fill" Value="Blue"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
     </ControlTemplate>
-    <!--</Button.Template>-->
 </ResourceDictionary>

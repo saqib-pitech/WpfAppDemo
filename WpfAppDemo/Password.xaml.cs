@@ -40,6 +40,11 @@ namespace WpfAppDemo
                 // navigation code
                 MainWindow mw = new MainWindow();
                 mw.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username/Password", "Alert", MessageBoxButton.OK);
             }
         }
 

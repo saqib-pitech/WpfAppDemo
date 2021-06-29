@@ -35,7 +35,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBLibrary">
+      <HintPath>..\..\ADONETDemo\DBLibrary\bin\Debug\DBLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,15 +59,64 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Calculator.xaml.cs">
+      <DependentUpon>Calculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckboxTriggerDemo.xaml.cs">
+      <DependentUpon>CheckboxTriggerDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionBindingDemo.xaml.cs">
+      <DependentUpon>CollectionBindingDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataBindingDemo.xaml.cs">
+      <DependentUpon>DataBindingDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataDML.xaml.cs">
+      <DependentUpon>DataDML.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemo.xaml.cs">
+      <DependentUpon>DBDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindForm.xaml.cs">
+      <DependentUpon>NorthwindForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectBindingDemo.xaml.cs">
+      <DependentUpon>ObjectBindingDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Password.xaml.cs">
       <DependentUpon>Password.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductModel.cs" />
     <Compile Include="ResourceDemo.xaml.cs">
       <DependentUpon>ResourceDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="ShapeBrushDemo.xaml.cs">
       <DependentUpon>ShapeBrushDemo.xaml</DependentUpon>
     </Compile>
+    <Page Include="Calculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CheckboxTriggerDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CollectionBindingDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataBindingDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataDML.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DBDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ExternalSources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,6 +135,10 @@
     </Compile>
     <Page Include="NorthwindForm.xaml">
       <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="ObjectBindingDemo.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Password.xaml">
@@ -98,9 +155,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NorthwindForm.xaml.cs">
-      <DependentUpon>NorthwindForm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
