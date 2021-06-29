@@ -64,5 +64,15 @@ namespace WpfAppDemo
         {
             Reset();
         }
+
+        private void lstItems_Selected(object sender, RoutedEventArgs e)
+        {
+            string file = lstItems.SelectedItem.ToString();
+            using (StreamReader sr = File.OpenText(file))
+            {
+                string data=sr.ReadToEnd();
+                rchBox.AppendText(data);
+            }
+        }
     }
 }

@@ -51,7 +51,9 @@
             <Button Content="two" Width="200" Margin="10" DockPanel.Dock="Right"/>
             <Button Content="three" Width="200" Margin="10" DockPanel.Dock="Bottom"/>
             <Button Content="four" Width="200" Margin="10" DockPanel.Dock="top"/>
-            --><!--<Button Content="five" Width="200"/>--><!--
+            -->
+        <!--<Button Content="five" Width="200"/>-->
+        <!--
         </DockPanel>-->
         <!--<TabControl>
             <TabItem Header="General">
@@ -75,6 +77,8 @@
             <Label Background="LightGreen" Canvas.Top="40" Canvas.Left="100">Green</Label>
         </Canvas>-->
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
@@ -111,13 +115,12 @@
             <CheckBox Name="chkMusic" Margin= "5">Music</CheckBox>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="1" Margin="18" Orientation= "Horizontal">
-                <Button Name="btnsubmit" Content = "Submit" Margin="5" Click="btnsubmit_Click"></Button>
-                <Button Name="btncancel" Content = "Cancel " Margin="5" Click="btncancel_Click"></Button>
-            </StackPanel>
-        <DockPanel>
-            <ListBox Name="lstItems" DockPanel.Dock="Right">
-            </ListBox>
-        </DockPanel>
+            <Button Name="btnsubmit" Content = "Submit" Margin="5" Click="btnsubmit_Click"></Button>
+            <Button Name="btncancel" Content = "Cancel " Margin="5" Click="btncancel_Click"></Button>
+        </StackPanel>
+        <RichTextBox Grid.Column="2" Grid.Row="0" Grid.RowSpan="7" Name="rchBox" DockPanel.Dock="Left" Width="300"/>
+        <ListBox  Grid.Column="3" Grid.Row="0" Grid.RowSpan="7" Name="lstItems" DockPanel.Dock="Right" SelectionChanged="lstItems_Selected" Width="150">
+        </ListBox>
         <!--
         <Button Content="Two" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
         <TextBox Grid.Row="1" Grid.Column="1" Name="txtUname" Width="150" Margin="10" HorizontalAlignment="Left"/>
@@ -140,6 +143,6 @@
             <Button Name="btnsubmit" Content = "Submit" Margin="5"></Button>
             <Button Name="btncalcel" Content = "Cancel " Margin="5"></Button>
         </StackPanel>-->
-        
+
     </Grid>
 </Window>

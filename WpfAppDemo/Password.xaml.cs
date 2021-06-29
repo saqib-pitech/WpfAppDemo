@@ -38,6 +38,8 @@ namespace WpfAppDemo
             if(uname=="admin" && pwd == "123")
             {
                 // navigation code
+                MainWindow mw = new MainWindow();
+                mw.Show();
             }
         }
 
