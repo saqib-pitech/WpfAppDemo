@@ -71,6 +71,7 @@ namespace WpfAppDemo
             using (StreamReader sr = File.OpenText(file))
             {
                 string data=sr.ReadToEnd();
+                rchBox.Document.Blocks.Clear();
                 rchBox.AppendText(data);
             }
         }
