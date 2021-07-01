@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WpfAppDemo.FuncAction</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DBLibrary">
       <HintPath>..\..\ADONETDemo\DBLibrary\bin\Debug\DBLibrary.dll</HintPath>
@@ -68,6 +71,10 @@
     <Compile Include="CollectionBindingDemo.xaml.cs">
       <DependentUpon>CollectionBindingDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Country.cs" />
+    <Compile Include="CountrynState.xaml.cs">
+      <DependentUpon>CountrynState.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataBindingDemo.xaml.cs">
       <DependentUpon>DataBindingDemo.xaml</DependentUpon>
     </Compile>
@@ -76,6 +83,11 @@
     </Compile>
     <Compile Include="DBDemo.xaml.cs">
       <DependentUpon>DBDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="FuncAction.cs" />
+    <Compile Include="LINQDemo.xaml.cs">
+      <DependentUpon>LINQDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="NorthwindForm.xaml.cs">
       <DependentUpon>NorthwindForm.xaml</DependentUpon>
@@ -93,6 +105,7 @@
     <Compile Include="ShapeBrushDemo.xaml.cs">
       <DependentUpon>ShapeBrushDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="State.cs" />
     <Page Include="Calculator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -102,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CollectionBindingDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CountrynState.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ExternalSources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LINQDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfAppDemo.CountrynState"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDemo"
+        mc:Ignorable="d"
+        Title="CountrynState" Height="450" Width="800">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Loaded="StackPanel_Loaded">
+        <ComboBox Name="cmbCountry" Margin="10" Width="100" SelectionChanged="cmbCountry_SelectionChanged">
+        </ComboBox>
+        <ComboBox Name="cmbState" Margin="10" Width="100" SelectionChanged="cmbState_SelectionChanged">
+        </ComboBox>
+        <TextBox Name="stateCapital" Margin="10" Width="100">
+            
+        </TextBox>
+    </StackPanel>
+</Window>
